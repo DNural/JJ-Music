@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A652F7F-94A0-41FF-A241-75F426C00C42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JJ</RootNamespace>
+    <AssemblyName>JJ</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CmdClass.cs" />
+    <Compile Include="DbClass.cs" />
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayit.Designer.cs">
+      <DependentUpon>Kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KullaniciUC.Designer.cs">
+      <DependentUpon>KullaniciUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SarkicilarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SarkicilarUC.Designer.cs">
+      <DependentUpon>SarkicilarUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarkilarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SarkilarUC.Designer.cs">
+      <DependentUpon>SarkilarUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarkiListeleriPOPUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SarkiListeleriPOPUP.Designer.cs">
+      <DependentUpon>SarkiListeleriPOPUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarkiListesiSilPOPUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SarkiListesiSilPOPUP.Designer.cs">
+      <DependentUpon>SarkiListesiSilPOPUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarkiListesiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SarkiListesiUC.Designer.cs">
+      <DependentUpon>SarkiListesiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarkiListesiPOPUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SarkiListesiPOPUP.Designer.cs">
+      <DependentUpon>SarkiListesiPOPUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayit.resx">
+      <DependentUpon>Kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciUC.resx">
+      <DependentUpon>KullaniciUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarkicilarUC.resx">
+      <DependentUpon>SarkicilarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarkilarUC.resx">
+      <DependentUpon>SarkilarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarkiListeleriPOPUP.resx">
+      <DependentUpon>SarkiListeleriPOPUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarkiListesiSilPOPUP.resx">
+      <DependentUpon>SarkiListesiSilPOPUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarkiListesiUC.resx">
+      <DependentUpon>SarkiListesiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarkiListesiPOPUP.resx">
+      <DependentUpon>SarkiListesiPOPUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resimler\icon\addButton.png" />
+    <Content Include="resimler\icon\deleteButton.png" />
+    <Content Include="resimler\icon\JJ_Logo_i.ico" />
+    <Content Include="resimler\icon\nextButton.png" />
+    <Content Include="resimler\icon\pauseButton.png" />
+    <Content Include="resimler\icon\playButton.png" />
+    <Content Include="resimler\icon\previousButton.png" />
+    <Content Include="resimler\logo\JJ_Logo_b.png" />
+    <Content Include="resimler\sarkicilar\Eminem.jpg" />
+    <Content Include="resimler\sarkicilar\Lana Del Rey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sarkilar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
